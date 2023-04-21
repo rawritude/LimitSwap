@@ -3,6 +3,10 @@ FROM python:3.10-slim
 RUN apt-get update && \
     apt-get install -y python3-pip \
     python3-dev
+       
+RUN apt-get -y update
+RUN apt-get -y install git
+
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
